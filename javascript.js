@@ -29,6 +29,10 @@ Try to use both the let and const keywords
 ******************************************************************************/
 
 //your code here
+const fullName = "Ola Norman";
+const age = 21;
+const isEmployed = true;
+const hobbies = ["Knitting", "Reading", "Working out", "Watching TV"];
 
 /****************************************************************************** 
 ASSIGNMENT 3
@@ -38,6 +42,12 @@ as well as a few of the shorthand operators (++, --, +=, -=)
 ******************************************************************************/
 
 //your code here
+let x = 2;
+x++;
+let y = 5;
+y--;
+let z = x * y;
+z /= 2;
 
 /****************************************************************************** 
 ASSIGNMENT 4
@@ -64,6 +74,13 @@ let userIsBlocked = false;
 let goToPage = "";
 
 //your code here
+if (userName && userAge >= 18 && !userIsBlocked) {
+  userIsLoggedIn = true;
+  goToPage = "/home";
+  console.log(`Welcome ${userName}`);
+} else {
+  console.log("Unsuccessful login");
+}
 
 /******************************************************************************
 ASSIGNMENT 5
@@ -81,3 +98,6 @@ to see that your conditional is working.
 const userMale = false;
 
 //your code here
+
+const userTitle = userMale ? "Mr." : "Mrs.";
+console.log(userTitle);
